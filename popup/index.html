@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<style>
+			body {
+				background: #ff4444ce;
+				animation: fadeinout 1500ms;
+				animation-iteration-count: infinite;
+				overflow: hidden;
+			}
+			@keyframes fadeinout {
+				0% {
+					background: #ffffff;
+				}
+				100% {
+					background: #ff4444ce;
+				}
+			}
+			p {
+				-webkit-app-region: no-drag;
+			}
+			button {
+				border-radius: 4px;
+				background: #ccc;
+				border: 1px solid #eee;
+				color: #333;
+				margin: 2px;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body style="-webkit-app-region: drag">
+		<p>
+			<button id="rest">20s</button>
+			<button id="skip">skip</button>
+		</p>
+
+		<script src="popup.js"></script>
+	</body>
+</html>
